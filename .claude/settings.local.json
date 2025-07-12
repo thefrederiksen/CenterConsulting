@@ -17,7 +17,9 @@
       "Bash(cp:*)",
       "Bash(rm:*)",
       "Bash(cmd /c \"rmdir /s /q center-consulting-react\")",
-      "Bash(npm:*)"
+      "Bash(npm:*)",
+      "Bash(git config:*)",
+      "Bash(gh auth:*)"
     ],
     "deny": []
   }
