@@ -7,18 +7,23 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
-  );
+  try {
+    return (
+      <div className="App">
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Services />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    );
+  } catch (error) {
+    console.error('App render error:', error);
+    return <div>Error loading application</div>;
+  }
 }
 
 export default App
