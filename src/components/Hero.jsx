@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const handleGetStartedClick = (e) => {
@@ -17,9 +18,9 @@ const Hero = () => {
       <div className="hero-content">
         <h1>Strategic Business Consulting</h1>
         <p>Transforming businesses through expert guidance and innovative solutions</p>
-        <a href="#contact" className="cta-button" onClick={handleGetStartedClick}>
-          Get Started
-        </a>
+        <Link to="/ai-agent" className="cta-button">
+          AI Agent Architecture and development
+        </Link>
       </div>
     </section>
   );
